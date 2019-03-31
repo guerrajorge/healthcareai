@@ -4,7 +4,6 @@ library(shiny)
 
 ##################################LoadData###########################
 df_doctors <- read.csv(file="Doctors4.csv", header=TRUE, sep=",")
-Model <- read.csv(file="model.csv", header=TRUE, sep=",")
 
 
 #############################Funtions#########################################
