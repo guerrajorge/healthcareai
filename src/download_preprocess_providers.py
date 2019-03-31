@@ -48,7 +48,7 @@ def main():
         dermatologies.loc[zipc_ix, 'latitude'] = search.by_zipcode(zipc).lat
         dermatologies.loc[zipc_ix, 'longitude'] = search.by_zipcode(zipc).lng
 
-    dermatologies.to_csv(Path(dataset_dir, 'cancer_providers_lat_lng.csv'), index=False)
+    dermatologies.to_csv(Path(dataset_dir, 'Doctors4.csv'), index=False)
         
 
 if __name__ == '__main__':
