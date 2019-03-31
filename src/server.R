@@ -113,11 +113,11 @@ shinyServer(function(input, output) {
   modelresult <- reactive({ 
     req(input$file1)    
     
-  python_path="/anaconda3/envs/py3/bin/python"
-  image_path=paste("/Users/ruizv1/Desktop/temp/temp/", input$file1$name, sep="")
-  model_path="/Users/ruizv1/Desktop/temp/temp/model.hd5"
-  script_path="/Users/ruizv1/GitRepos/challenge/predict_from_pic.py"
-  out_path="/Users/ruizv1/Desktop/prediction.txt"
+  python_path="python3"
+  image_path=input$file1$name
+  model_path="model.hd5"
+  script_path="predict_from_pic.py"
+  out_path="prediction.txt"
   
   call_s = paste(python_path," ", script_path, " --image_path=", image_path, " --model_path=", model_path, " --out_path=", out_path, sep="")
   
