@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "downloading the medicaid provider data"
-wget https://data.cms.gov/api/views/85jw-maq9/rows.csv?accessType=DOWNLOAD
+wget https://data.cms.gov/api/views/85jw-maq9/rows.csv?accessType=DOWNLOAD --directory-prefix=../dataset/
 
 python_path="...python interpreter" # path to python interpreter
 
